@@ -1,0 +1,108 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+}
+
+#container {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#todo_container {
+    display: flex;
+    flex-direction: wrap;
+    flex-direction: column;
+    height: auto;
+    min-height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 20px 100px 20px;
+}
+
+.font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#todo_container h1 {
+    text-align: center;
+}
+
+#input {
+    width: 350px;
+    height: 50px;
+    align-self: center;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 0px 15px;
+    font-size: large;
+}
+
+#list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: medium;
+    margin-top: 20px;
+    padding: 5px 0px 0px 10px;
+}
+
+.checkbox {
+    line-height: normal;
+    width: 16px;
+    height: 16px;
+}
+
+.newDiv {
+    display: flex;
+    margin: 10px 0px;
+    gap: 8px;
+    position: relative;
+    width: 84%;
+}
+
+label {
+    overflow-x: hidden;
+    word-wrap: break-word;
+    position: inherit;
+    left: 28px;
+    bottom: 1px;
+}
+
+.checkedDiv {
+    text-decoration: line-through;
+}
+
+input[type='checkbox'] {
+    accent-color: #878686;
+    position: absolute;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blinkItem {
+    animation: blink 2s linear infinite;
+}
+
+.delete {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 360px;
+    cursor: pointer;
+}
+
+img {
+    height: 20px;
+    width: 20px;
+}
