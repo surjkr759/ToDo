@@ -7,7 +7,6 @@ body {
 
 #container {
     display: flex;
-    flex-direction: wrap;
     justify-content: center;
     height: 100%;
     width: 100%;
@@ -15,7 +14,6 @@ body {
 
 #todo_container {
     display: flex;
-    flex-direction: wrap;
     flex-direction: column;
     height: auto;
     min-height: 200px;

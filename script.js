@@ -26,8 +26,9 @@ document.addEventListener('keydown', (event) => {
     const key = event.key;
     const input = document.getElementById('input');
     if(key === 'Enter' && input.value.trim() !== '' && document.activeElement.tagName === 'INPUT'){ //when cursor is in input bar, and input is not blank, and when enter button is pressed, execute beow:
-        const x = addItemInMyTodoArray(input.value.trim());             //handler for adding item into local storage
-        if(x) addTodoInDOM(input.value);         // handler for creating html elements and displaying them on screen
+        const val = input.value.replace(/\s+/g,' ').trim();
+        const x = addItemInMyTodoArray(val);             //handler for adding item into local storage
+        if(x) addTodoInDOM(val);         // handler for creating html elements and displaying them on screen
     }
 });
 
